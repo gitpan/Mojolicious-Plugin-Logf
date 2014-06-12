@@ -2,7 +2,8 @@
 abstract: 'Plugin for logging datastructures using sprintf'
 author:
   - 'Jan Henning Thorsen <jhthorsen@cpan.org>'
-build_requires: {}
+build_requires:
+  Test::More: 0.9
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
@@ -16,10 +17,11 @@ no_index:
   directory:
     - t
     - inc
-requires: {}
+requires:
+  Mojolicious: 4.3
 resources:
   bugtracker: https://github.com/jhthorsen/mojolicious-plugin-logf/issues
   homepage: https://metacpan.org/release/Mojolicious-Plugin-Logf
   license: http://dev.perl.org/licenses/
   repository: https://github.com/jhthorsen/mojolicious-plugin-logf.git
-version: 0.01
+version: 0.02
